@@ -1,0 +1,344 @@
+﻿
+@{
+    ViewBag.Title = "form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="slider">
+    <img src="~/Images/inner-pages.jpg" class="img-reponsive">
+</div><!-- #intro -->
+<main id="main">
+    <section id="contact" class="section-bg wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="container">
+            <div class="section-header">
+                <h3>Admission <span>Form </span></h3>
+            </div>
+            <div class="form">
+                <form action="~/Home/form" method="post" name="admission" enctype="multipart/form-data" class="contactform">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="coursename">Select Course</label>
+                            <select name="coursename" class="form-control" id="coursename">
+                                <option value="">--- Select Course ---</option>
+                                <option value="1">B.sc Hotel Management and Catering Sciences</option>
+                                <option value="2">B.sc Tourism &amp; Hospitality Management</option>
+                                <option value="3">M.sc Hotel Management and Catering Sciences</option>
+                                <option value="4">M.sc Tourism &amp; Hospitality Management</option>
+                                <option value="5">M.B.A ( Tourism &amp; Hotel Management)</option>
+                                <option value="6">M.A ( Tourism Management)</option>
+                                <option value="7">P.G. Diploma in Hotel Management</option>
+                                <option value="8">P.G. Diploma in Tourism Management</option>
+                                <option value="9">Diploma in caterring Opera</option>
+                                <option value="10">Diploma in Front Office and Accommoda</option>
+                                <option value="11">Diploma in Food and Beverage service Management</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Candidate Photo</label><br>
+                            <img id="blah" src="~/Images/no-image.jpg" width="250" alt="your image"><br>
+                            <input type="file" name="photo" id="photo" onchange="readURL(this);">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Candidate Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Date of Birth</label>
+                            <input type="text" name="dob" class="form-control datepicker" id="dob" placeholder="Date of Birth">
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Contact No.</label>
+                            <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Father's Name</label>
+                            <input type="text" class="form-control" name="fathername" id="fathername" placeholder="Father Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Mother's Name</label>
+                            <input type="text" class="form-control" name="mothername" id="mothername" placeholder="Mother Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Correspondance Address</label>
+                            <textarea name="address" id="address" class="form-control" placeholder="Enter address of Correspondance" cols="30" rows="3">&nbsp;</textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">City</label>
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Father Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">State</label>
+                            <select name="state" id="state" class="form-control">
+                                <option value="">--- Select State ---</option>
+                                <option value="AR">Arunachal Pradesh</option>
+                                <option value="AS">Assam</option>
+                                <option value="BR">Bihar</option>
+                                <option value="CT">Chhattisgarh</option>
+                                <option value="GA">Goa</option>
+                                <option value="GJ">Gujarat</option>
+                                <option value="HR">Haryana</option>
+                                <option value="HP">Himachal Pradesh</option>
+                                <option value="JK">Jammu and Kashmir</option>
+                                <option value="JH">Jharkhand</option>
+                                <option value="KA">Karnataka</option>
+                                <option value="KL">Kerala</option>
+                                <option value="MP">Madhya Pradesh</option>
+                                <option value="MH">Maharashtra</option>
+                                <option value="MN">Manipur</option>
+                                <option value="ML">Meghalaya</option>
+                                <option value="MZ">Mizoram</option>
+                                <option value="NL">Nagaland</option>
+                                <option value="OR">Odisha</option>
+                                <option value="PB">Punjab</option>
+                                <option value="RJ">Rajasthan</option>
+                                <option value="SK">Sikkim</option>
+                                <option value="TN">Tamil Nadu</option>
+                                <option value="TG">Telangana</option>
+                                <option value="TR">Tripura</option>
+                                <option value="UP">Uttar Pradesh</option>
+                                <option value="UT">Uttarakhand</option>
+                                <option value="WB">West Bengal</option>
+                                <option value="AN">Andaman and Nicobar Islands</option>
+                                <option value="CH">Chandigarh</option>
+                                <option value="DN">Dadra and Nagar Haveli</option>
+                                <option value="DD">Daman and Diu</option>
+                                <option value="LD">Lakshadweep</option>
+                                <option value="DL">National Capital Territory of Delhi</option>
+                                <option value="PY">Puducherry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Pin</label>
+                            <input type="text" class="form-control" name="pin" id="pin" placeholder="PIN">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Parent's Email</label>
+                            <input type="text" class="form-control" name="parentemail" id="parentemail" placeholder="Enter Paren&#39;t Email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Educational Qualifications</strong></label>
+                            <hr>
+                            <section class="eduqualihead"></section><section class="eduqualibdy"></section><table class="table table-stripped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.</th>
+                                        <th>Examination Passed</th>
+                                        <th>Name of Institute</th>
+                                        <th>Year of Passing</th>
+                                        <th>Marks Percentage</th>
+                                        <th>Remarks</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                        <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                        <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                        <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                        <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                        <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                        <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                        <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                        <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                        <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                        <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                        <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                        <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr>
+                                    <!-- <tr>
+                                      <td>4</td>
+                                      <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                      <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                      <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                      <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                      <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td>5</td>
+                                      <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                      <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                      <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                      <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                      <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <td>6</td>
+                                      <td><input type="text" class="form-control" name="exampass[]" id="exampass[]" placeholder="Examination Passed"></td>
+                                      <td><input type="text" class="form-control" name="instname[]" id="instname[]" placeholder="Institute Name"></td>
+                                      <td><input type="text" class="form-control" name="passedyr[]" id="passedyr[]" placeholder="Year of passing"></td>
+                                      <td><input type="text" class="form-control" name="percentage[]" id="percentage[]" placeholder="Marks Percentage"></td>
+                                      <td><input type="text" class="form-control" name="remarks[]" id="remarks[]" placeholder="Remarks"></td>
+                                    </tr> -->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Fluency in English</label><br>
+                            <label>
+                                <input type="radio" name="englishfluency" value="1"><small><strong>Excellent</strong></small>
+                            </label>
+                            <label>
+                                <input type="radio" name="englishfluency" value="2"><small><strong>Average</strong></small>
+                            </label>
+                            <label>
+                                <input type="radio" name="englishfluency" value="3"><small><strong>Below Average</strong></small>
+                            </label>
+                        </div>
+                    </div>
+                    <label for="name">Other Language Known to Speak/Read/Write</label><br>
+                    <div class="clearfix"></div>
+                    <div class="form-inline">
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control col-sm-12" name="otherlanguage[]" id="otherlanguage[]" placeholder="Other Language">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control col-sm-12" name="otherlanguage[]" id="otherlanguage[]" placeholder="Other Language">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control col-sm-12" name="otherlanguage[]" id="otherlanguage[]" placeholder="Other Language">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Family Background</strong></label>
+                            <hr>
+                            <section class="familtbackhead"></section><section class="familtbackbdy"></section><table class="table table-stripped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Relation</th>
+                                        <th>Name</th>
+                                        <th>Occupation/Desgination</th>
+                                        <th>Contact Number</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="relation[]" id="relation[]" class="form-control">
+                                                <option value="">---- Select Relation ----</option>
+                                                <option value="father">Father</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="brosis">Brother/Sister</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" name="relname[]" id="relname[]" placeholder="Relative Name"></td>
+                                        <td><input type="text" class="form-control" name="occupation[]" id="occupation[]" placeholder="Occupation/Designation"></td>
+                                        <td><input type="text" class="form-control" name="relcontactnum[]" id="relcontactnum[]" placeholder="Contact Number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="relation[]" id="relation[]" class="form-control">
+                                                <option value="">---- Select Relation ----</option>
+                                                <option value="father">Father</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="brosis">Brother/Sister</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" name="relname[]" id="relname[]" placeholder="Relative Name"></td>
+                                        <td><input type="text" class="form-control" name="occupation[]" id="occupation[]" placeholder="Occupation/Designation"></td>
+                                        <td><input type="text" class="form-control" name="relcontactnum[]" id="relcontactnum[]" placeholder="Contact Number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="relation[]" id="relation[]" class="form-control">
+                                                <option value="">---- Select Relation ----</option>
+                                                <option value="father">Father</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="brosis">Brother/Sister</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" name="relname[]" id="relname[]" placeholder="Relative Name"></td>
+                                        <td><input type="text" class="form-control" name="occupation[]" id="occupation[]" placeholder="Occupation/Designation"></td>
+                                        <td><input type="text" class="form-control" name="relcontactnum[]" id="relcontactnum[]" placeholder="Contact Number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="relation[]" id="relation[]" class="form-control">
+                                                <option value="">---- Select Relation ----</option>
+                                                <option value="father">Father</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="brosis">Brother/Sister</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" name="relname[]" id="relname[]" placeholder="Relative Name"></td>
+                                        <td><input type="text" class="form-control" name="occupation[]" id="occupation[]" placeholder="Occupation/Designation"></td>
+                                        <td><input type="text" class="form-control" name="relcontactnum[]" id="relcontactnum[]" placeholder="Contact Number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="relation[]" id="relation[]" class="form-control">
+                                                <option value="">---- Select Relation ----</option>
+                                                <option value="father">Father</option>
+                                                <option value="mother">Mother</option>
+                                                <option value="brosis">Brother/Sister</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" class="form-control" name="relname[]" id="relname[]" placeholder="Relative Name"></td>
+                                        <td><input type="text" class="form-control" name="occupation[]" id="occupation[]" placeholder="Occupation/Designation"></td>
+                                        <td><input type="text" class="form-control" name="relcontactnum[]" id="relcontactnum[]" placeholder="Contact Number"></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Extra Curricular Activities and Certificates/Prizes Won</label>
+                            <textarea name="extraactivity" id="extraactivity" class="form-control" placeholder="Enter activities" cols="30" rows="3">&nbsp;</textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Additional Information You Wish To Give</label>
+                            <textarea name="additionalinfo" id="additionalinfo" class="form-control" placeholder="Enter additional information" cols="30" rows="3">&nbsp;</textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="formname" value="admissionform">
+                    <button type="submit" class="btn btn-info btn-sm">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+

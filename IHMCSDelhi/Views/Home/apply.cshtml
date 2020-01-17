@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "apply";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="slider">
+    <img src="~/Images/job-opping.jpg">
+</div>
+<main id="main">
+    <section id="contact" class="section-bg wow fadeInUp" style="visibility: visible;">
+        <div class="container">
+            <div class="section-header">
+                <h3> APPLY<span> NOW</span></h3>
+
+            </div>
+            <div class="row contact-info">
+                <div class="col-md-12">
+                    <div class="form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+
+                        <form method="POST" name="email_form_with_php" action="~/Home/contact" enctype="multipart/form-data" role="form" class="contactForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone No" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Resume</label>
+                                    <input type="file" name="uploaded_file" class="newvollkornblk" style="width:205px;">
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="text-center"><input type="submit" value="Submit" name="submit"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- #contact -->
+</main>
+

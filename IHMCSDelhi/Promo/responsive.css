@@ -1,0 +1,920 @@
+@media screen and (max-width: 1980px) and (min-width: 1367px){
+    .banner_carousel .carousel-inner>.item {
+        height: 950px;
+    }
+    .banner_carousel .header-text{
+        top: 25%;
+    }
+    .banner_form{
+            padding: 130px 40px 25px;
+    }
+    .logo img {
+        width: 60%;
+    }
+    .navbar-right{
+        margin-right: 50px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover{
+        xmargin: 75px 0 0 50px;
+        margin: 0px 0 0 50px;
+        padding: 10px 15px 12px;
+    }
+    header h1{
+        font-size: 34px;
+    }
+    header p{
+        font-size: 25px;
+    }
+    .banner_desc2 h1{
+        margin: 0% 0 3%;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        right: 3%;
+    }
+    header .container, .campus .container, .hospatility .container{
+        width: 88%;
+    }
+    .stats_no{
+        border-radius: 200px;
+        padding: 80px 0;
+    }
+    .stats_no h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1680px) and (min-width: 1367px){
+    .banner_carousel .carousel-inner>.item {
+        height: 790px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        xmargin: 75px 0 0 40px;
+        margin: 0px 0 0 40px;
+    }
+    .stats_no {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1367px){
+    .banner_carousel .carousel-inner>.item {
+        height: 750px;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 22px;
+    }
+    .stats_no h1 {
+        font-size: 55px;
+    }
+    .stats_no {
+        padding: 55px 0;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    header p {
+        font-size: 19px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        xmargin: 50px 0 0 5px;
+        margin: 0px 0 0 5px;
+    }
+    .stats_no h1 {
+        font-size: 50px;
+    }
+    .stats_no {
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 1440px) and (min-width: 1367px){
+    .banner_carousel .carousel-inner>.item {
+        height: 680px;
+    }
+    .banner_form {
+        padding: 60px 40px 25px;
+    }
+    .banner_carousel .header-text {
+        top: 20%;
+    }
+    .b2_1 img {
+        width: 60%;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        right: 4%;
+    }
+}
+@media screen and (max-width: 1280px){
+    .banner_carousel .carousel-inner>.item {
+        height: 595px;
+    }
+    .banner_carousel .header-text{
+        top: 15%;
+    }
+    .b2_2 {
+        right: -25px;
+    }
+    .banner_desc3 h1{
+        font-size: 60px;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        top: 50%;
+    }
+    .grey_bg img {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover{
+        xmargin: 45px 0 0 5px;
+        margin: 0px 0 0 5px;
+        padding: 6px 5px 8px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    .banner_desc1 h1{
+        font-size: 45px;
+    }
+    .banner_desc1 p{
+        font-size: 23px;
+    }
+    .banner_desc2 h1{
+        font-size: 40px;
+        margin: 1% 0 3%;
+    }
+    .banner_desc2 p{
+        font-size: 15px;
+    }
+    .b2_1 img {
+        width: 45%;
+    }
+    .b2_1 img {
+        width: 45%;
+    }
+    .b2_2 {
+        right: -55px;
+    }
+    .b2_2 img {
+        width: 55%;
+    }
+    .banner_desc3{
+        margin: 0% 0;
+    }
+    .banner_desc3 h1 {
+        font-size: 46px;
+        margin: 2% 0 3%;
+    }
+    .banner_form{
+        width: 28%;
+        padding: 14px 35px 25px;
+        right: 7%;
+    }
+    .form-control{
+        height: 30px;
+        font-size: 13px;
+    }
+    .form-group {
+        margin-bottom: 12px;
+    }
+    .submit_btn{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 480px;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        padding: 10px 30px;
+        top: 45%;
+    }
+    .hmc_desc h1, .career_desc h1{
+        font-size: 17px;
+    }
+    .hmc_desc h2, .career_desc h2, .campus_desc h1, .hospatility_desc h1{
+        font-size: 28px;
+    }
+    .about_img img{
+        height: auto;
+    }
+    .campus_desc h2, .hospatility_desc h2{
+        font-size: 20px;
+    }
+    .stats_no{
+        padding: 27px 0;
+    }
+    .testimonial-style .carousel-inner > .item{
+        min-height: 380px;
+    }
+    .top_desc h2{
+        font-size: 30px;
+    }
+    .banner_form h1 {
+        font-size: 21px;
+            margin: 0px 0 8px;
+    }
+}
+@media screen and (max-width: 990px){
+    .fixed_sticker, .fixed_sticker:hover{
+        top: 85%;
+    }
+    header .container{
+        width: 100%;
+    }
+    header .col-md-10{
+        float: left;
+        width: 66%;
+    }
+    header h1{
+        margin: 1% 0 0;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover{
+        margin: 5px 0 0 5px;
+    }
+    .navbar-right {
+        margin-right: 25%;
+    }
+    .banner_form{
+        top: 0;
+    }
+    .hmc_desc h2 img, .career_desc h2 img, .top_desc h2 img, .campus_desc h2 img, .testimonials_desc h1 img, .hospatility_desc h2 img{
+        width: 10%;
+    }
+    .hmc_block_div{
+        width: 69%;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .hmc_block{
+        min-height: auto;
+    }
+    .grey_bg img {
+        /*width: auto;*/
+        width: 100%;
+        margin: 0 auto 4%;
+    }
+    .top_desc h2{
+        font-size: 25px;
+    }
+    .top_img img {
+        margin: 0 auto 5%;
+    }
+    .campus_desc h2, .hospatility_desc h2 {
+        font-size: 17px;
+    }
+    .stats_no {
+        padding: 71px 0;
+        width: 28%;
+        margin: 4% auto;
+    }
+    .stats_no h1{
+        font-size: 50px;
+        margin: 0;
+    }
+    .h_stats p{
+        margin: 0 0 6%;
+    }
+    .border-right {
+        border: none;
+    }
+    .campus_logo p{
+        text-align: center;
+    }
+    .campus_logo p img {
+        width: 13%;
+        margin: 2% 1%;
+    }
+    .pdf_btn img {
+        width:50%;
+        padding-top:5px;
+    }
+}
+@media screen and (max-width: 800px){
+    header .col-md-10{
+        width: 70%;
+    }
+    .banner_form h1 {
+        font-size: 18px;
+    }
+    .banner_form{
+        padding: 14px 15px 15px;
+    }
+    .banner_desc3 p{
+        font-size: 17px;
+    }
+    .banner_desc1 h1 {
+        font-size: 40px;
+    }
+    .banner_desc1 p {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .banner_desc2 p {
+        font-size: 13px;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        padding: 7px 30px;
+        top: 85%;
+    }
+    .pdf_btn img {
+        width:60%;
+        padding-top:5px;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner_carousel .carousel-inner>.item {
+        height: 420px;
+    }
+    .banner_desc3 h1 {
+        font-size: 46px;
+        margin: 1% 0 3%;
+        line-height: 44px;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        padding: 10px 30px;
+        top: 45%;
+        right: 5%;
+    }
+    .testimonial-style .carousel-inner > .item {
+        min-height: 330px;
+    }
+    #carousel1{
+        margin: 0 0 10%;
+    }
+    .form-control{
+        height: 27px;
+    }
+    .warning-msg{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 640px){
+    .navbar-header{
+        width: 20%;
+        float: left;
+    }
+    .logo img {
+        width: 100%;
+    }
+    header .col-md-10 {
+        width: 80%;
+        float: left;
+    }
+    .navbar-right {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+        width: 48%;
+        float: left;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 5px 0 0 30px;
+    }
+    .banner1 {
+        background: url(../images/hospitality.jpg)no-repeat;
+        background-size: cover;
+    }
+    .banner_carousel{
+        /*display: none;*/
+    }
+    .banner_form {
+        padding: 14px 20px 25px;
+        position: initial;
+        float: left;
+        margin: 0 0 0 30%;
+        width: 40%;
+    }
+    .hmc_desc h2, .career_desc h2, .campus_desc h1, .hospatility_desc h1, .top_desc h2 {
+        font-size: 23px;
+    }
+    .hmc_desc h1, .career_desc h1, .top_desc h1, .campus_desc h2, .hospatility_desc h2, .about_desc h2 {
+        font-size: 14px;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        padding: 7px 20px;
+        top: 80%;
+        right: 5%;
+    }
+    .campus_logo p img {
+        width: 20%;
+    }
+    .stats_no{
+        width: 33%;
+    }
+    .testimonial-style .testimonial-caption-style{
+        width: 100%;
+        padding-top: 0;
+    }
+    .t_image {
+        padding: 0 0 5%;
+    }
+    .msg_t, .name_t, .desc_t, .testi_carousel h1{
+        text-align: center;
+    }
+    .testimonial-style .carousel-inner > .item {
+        min-height: 420px;
+    }
+    .thankyou h1 {
+        margin: 15% 6% !important;
+    }
+    .banner_carousel .header-text{
+        width: 90%;
+        top: 15%;
+    }
+    .pdf_btn {
+        margin-top: -15px;;
+    }
+    .pdf_btn img {
+        width: 80%;
+    }
+    .banner_desc4{
+        background-size: cover;
+        background-position: -250px 0px;
+    }
+    .banner_carousel .header-text4{
+        width: 100%;
+    }
+    .banner_item5{
+    background-image: url('../images/the_career_choice_mobile.jpg');
+    background-position-x: -110px;
+    }
+    .pune_banner_content img {
+    width: 80%;
+    left: 5%;
+    position: absolute;
+    top: -10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .hmc_desc h2, .career_desc h2, .campus_desc h1, .hospatility_desc h1, .top_desc h2 {
+        font-size: 21px;
+    }
+    .hmc_desc h2 img, .career_desc h2 img, .top_desc h2 img, .campus_desc h2 img, .testimonials_desc h1 img, .hospatility_desc h2 img {
+        width: 5%;
+    }
+    .stats_no {
+        width: 35%;
+    }
+    .about_desc h1{
+        font-size: 30px;
+    }
+    .banner_form{
+        margin: 0 0 0 15%;
+        width: 70%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-control {
+        height: 40px;
+        font-size: 14px;
+    }
+    .submit_btn {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        right: 6%;
+        top: 60%;
+    }
+    .banner_carousel .header-text{
+        top: 9%;
+    }
+    .navbar-right span {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 590px){
+    .banner_item5 {
+            background-position-x: -130px;
+    }
+    .navbar-header {
+        width: 25%;
+        padding: 0 0 0 15px;
+    }
+    header .col-md-10 {
+        width: 75%;
+    }
+    header h1 {
+        font-size: 16px;
+        margin: 4% 0 0;
+    }
+    header p{
+        font-size: 13px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 5px 0 0 10px;
+    }
+}
+@media screen and (max-width: 570px){
+    .banner_item5{
+            background-position-x: -140px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 5px 0 0 7px;
+    }
+    .stats_no {
+        width: 37%;
+    }
+    .navbar-right span{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .pune_banner_content img {
+       width: 62%;
+    left: 15%;
+}
+.navbar-right .contact_icon {
+    width: 20px;
+    float: left;
+    margin: 3px 4px 0 0;
+}
+    header h1 {
+        font-size: 14px;
+    }
+    header p{
+        font-size: 13px;
+    }
+    .navbar-right span{
+        font-size: 11px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 5px 0 0 6px;
+        padding: 3px 5px 6px;
+    }
+    .stats_no {
+        width: 45%;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        font-size: 14px;
+    }
+    .abt_img_mob{
+        display: block;
+    }
+    .abt_img_mob img{
+        margin: 0 auto;
+    }
+    .abt_img_desk{
+        display: none;
+    }
+    .grey_bg{
+        padding: 40px 30px;
+    }
+    .banner_desc1 h1, .banner_desc2 h1, .banner_desc3 h1{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .banner_desc1 p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .banner_desc2 p {
+        font-size: 11px;
+        line-height: 15px;
+        width: 91%;
+        margin: 2% auto;
+    }
+    .banner_desc2 p img {
+        width: 20%;
+    }
+    .banner_desc3 p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .banner_desc3 p img{
+        margin: 2% 0 0%;
+    }
+    .b2_1 img {
+        width: 25%;
+    }
+    .b2_2 img {
+        width: 25%;
+    }
+    .b2_2 {
+        right: -95px;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 240px;
+    }
+    .carousel-indicators{
+            bottom: 0px;
+    margin-bottom: 0;
+    width: 100%;
+    left: 30%;
+    }
+    .b2_3 img {
+        width: 10%;
+    }
+    .carousel-indicators li, .carousel-indicators .active{
+        margin: 1px 15px;
+        width: 10px;
+        height: 10px;
+    }
+    .pdf_btn img {
+        width: 90%;
+    }
+    .banner_desc4{
+        color: #fff;
+    }
+    .banner_item4{
+        background-position-x: -350px;
+    }
+    .banner_item5 {
+    background-position-x: 0px;
+    }
+    /*.banner_desc4 h1{
+        font-family: 'gotham-black-webfont';
+        font-size: 45px;
+        margin: 4% 0 3%;
+        text-align: center;
+        color: #F4E832;
+        text-transform: uppercase;
+    }
+    .banner_desc4 p{
+        font-family: 'gotham-medium-webfont';
+        text-align: center;
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 40px;
+        width: 82%;
+        margin: 4% auto;
+    }
+    .banner_desc4 p img{
+        width: 50%;
+    }
+    .b4_1 img{
+        width: 40%;
+    }
+    .b4_2{
+        position: absolute;
+        right: 5%;
+        bottom: -25%;
+    }
+    .b4_2 img{
+        width: 40%;
+    }
+    .banner_carousel .header-text4 {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+        width: 40%;
+        color: #fff;
+    }*/
+    .banner_carousel .header-text {
+        top: 17%;
+    }
+}
+@media screen and (max-width: 460px){
+    .navbar-right span {
+        font-size: 10px;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        right: 7%;
+    }
+    .stats_no {
+        width: 47%;
+    }
+    .hmc_desc h2, .career_desc h2, .campus_desc h1, .hospatility_desc h1, .top_desc h2, .c_div h1, .testimonials_desc h1, .about_desc h1 {
+        font-size: 25px;
+    }
+    .hmc_desc h1, .career_desc h1, .top_desc h1, .campus_desc h2, .hospatility_desc h2 {
+        font-size: 16px;
+    }
+    .hmc_desc h2 img, .career_desc h2 img, .top_desc h2 img, .campus_desc h2 img, .testimonials_desc h1 img, .hospatility_desc h2 img{
+        display: none;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 230px;
+    }
+    .b2_3{
+        display: none;
+    }
+    .banner_carousel .header-text {
+        top: 16%;
+    }
+    .banner_desc3{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 440px){
+    .banner_carousel .header-text {
+        top: 19%;
+    }
+    .navbar-header {
+        width: 25%;
+        padding: 0 0 0 15px;
+    }
+    header .col-md-10 {
+        width: 75%;
+    }
+    header h1 {
+        font-size: 12px;
+        margin: 5% 0 0;
+    }
+    header p {
+        font-size: 11px;
+    }
+    .navbar-right {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 0px 0 0 10px;
+    }
+    .fixed_sticker, .fixed_sticker:hover {
+        right: 5%;
+        top: 60%;
+        font-size: 12px;
+        padding: 4px 20px;
+    }
+    .hmc_desc h2 img {
+        margin: 0 5px;
+    }
+    .hmc_desc h1, .career_desc h1, .top_desc h1, .campus_desc h2, .hospatility_desc h2 {
+        font-size: 13px;
+    }
+    .stats_no h1 {
+        font-size: 45px;
+    }
+    .stats_no {
+        width: 47%;
+    }
+    .hmc_desc h2, .career_desc h2, .campus_desc h1, .hospatility_desc h1, .top_desc h2 {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 425px){
+    .carousel-indicators{
+        width: 100%;
+    }
+    .banner_desc1 h1, .banner_desc2 h1, .banner_desc3 h1 {
+        font-size: 19px;
+        line-height: 19px;
+    }
+    .banner_desc2 p {
+        font-size: 10px;
+        line-height: 13px;
+        width: 95%;
+    }
+    .banner_desc1 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .banner_desc3 p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 215px;
+    }
+    .stats_no {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 414px){
+    .navbar-right .contact_icon{
+            width: 17px;
+    margin: 5px 3px 0 0;
+    }
+    .fixed_sticker, .fixed_sticker:hover{
+        right: 6%;
+    }
+    .grey_bg{
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width: 384px){
+    .banner_carousel .header-text {
+        top: 15%;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 190px;
+    }
+    header h1 {
+        font-size: 11px;
+        margin: 5% 0 0;
+    }
+    header p {
+        font-size: 9px;
+    }
+    .navbar-right .contact_icon {
+            width: 15px;
+    margin: 6px 2px 0 0;
+    }
+    .navbar-right span {
+        font-size: 10px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 3px 0 0 8px;
+        padding: 1px 5px 2px;
+    }
+    .stats_no {
+        width: 55%;
+    }
+    .testimonial-style .carousel-inner > .item {
+        min-height: 450px;
+    }
+    .testimonial-style .testimonial-caption-style{
+        padding: 0;
+    }
+    .testi_carousel h1{
+        margin: 15% 0 0;
+    }
+    .footer{
+        margin-top: 10%;
+    }
+    .banner_desc1 h1, .banner_desc2 h1, .banner_desc3 h1 {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .banner_carousel .carousel-inner>.item {
+        height: 220px;
+    }
+    .b2_3 {
+        bottom: 3px;
+        right: -320px;
+    }
+    .pune_banner_content img {
+       width: 70%;
+    left: 12%;
+}
+}
+@media screen and (max-width: 375px){
+    .banner_carousel .carousel-inner>.item {
+    height: 220px;
+}
+    .navbar-right .contact_icon {
+    width: 13px;
+    margin: 7px 3px 0 0;
+}
+    .form-control {
+        height: 33px;
+        font-size: 13px;
+    }
+    .submit_btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .stats_no{
+        padding: 68px 0;
+    }
+    .banner_desc2 p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px){
+    .pune_banner_content img {
+    width: 72%;
+    left: 13%;
+}
+    .carousel-indicators li, .carousel-indicators .active{
+            margin: 1px 13px;
+    }
+    header {
+        padding: 7px 0;
+    }
+    header h1 {
+        margin: 2% 0 0;
+    }
+    .navbar-right span {
+        font-size: 9px;
+    }
+    .navbar-nav>li>a, .nav>li>a:focus, .nav>li>a:hover {
+        margin: 0px 0 0 8px;
+        padding: 0px 5px 3px;
+    }
+    .navbar-right .contact_icon {
+        width: 10px;
+    margin: 9px 2px 0 0;
+    }
+    .form-control {
+        height: 30px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .banner_carousel .header-text {
+        top: 17%;
+    }
+}
+@media screen and (max-width: 330px){
+    .navbar-right span {
+        font-size: 8px;
+    }
+    .submit_btn {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px){
+    .carousel-indicators li, .carousel-indicators .active{
+            margin: 1px 10px;
+    }
+}

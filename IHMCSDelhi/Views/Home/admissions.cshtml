@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "admissions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="slider">
+    <img src="~/Images/inner-pages.jpg" class="img-reponsive">
+</div>
+<main id="main">
+   <section id="about" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="container">
+            <div class="section-header">
+                <h3>
+
+                    Admission procedure
+                </h3>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 about">
+                    <h4> Application form</h4>
+                    <p>Candidates   may apply on the pre printed form attached with the prospectus or may   download from our website http://www.ihmcsdelhi.org or can be collected   from the Reception by paying Rs. 500/- in cash or via demand draft in   favor of "INSTITUTE OF HOTEL MANAGEMENT &amp; CATERING SCIENCE" payable at Delhi. Downloaded form will be  accepted only with Rs. 500/- cash or demand draft as above mentioned.</p>
+                    <h4> Certificates </h4>
+                    <p>Application   form must be  attached with Self  attested  photocopies  of all eligibility certificates as given below:</p>
+                    <ul>
+                        <li> For Under Graduate Programmes Copy of X, XII Mark Cards &amp; Migration Certificate/ Transfer Certificate.</li>
+                        <li>
+                            For Post-Graduate Programmes Copy of X , XII, Graduation Certificate   (all 3 years Marksheet, Degree/Provisional Degree) &amp; Migration
+                            Certificates.
+                        </li>
+                    </ul>
+
+
+                    <h4> Deposit of Fee</h4>
+                    <p>Selected   candidates will have to deposit the fee within ten working days after   the declaration of Successful candidates list. In case the fee is not   deposited in the stipulated time , the student's claim to the admission   expires &amp; the same will be passed on to the first waiting list   candidates.</p>
+
+
+                    <p>Enclosures to be attached with the filled in application forms:</p>
+                    <ul>
+                        <li>
+                            Self attested photocopies supporting academics and evidence of proof   for employment, self employed candidates must attach relevant document
+                            as proof of work experience for their organization.
+                        </li>
+                        <li>
+                            Candidates have to produce the originals of all documents at the time   of personal interview as well as at the time of admission, if selected
+                        </li>
+                    </ul>
+                    <h4>Academic Calendar</h4>
+                    <p>The academic calendar of the IHMCS will be followed July To june.</p>
+
+                    <h4>Discipline</h4>
+                    <p>The   students of the programme will be governed by the college rules in   regard to minimum attendance, evaluation for award of Degree Certificate   .Student shall abide by the statutes ordinances, Rules, and Regulations   of college that are in force from time to time .They shall give due   respect to the teachers and staff of the college and shall display   decent and cordial behavior to fellow students .</p>
+
+                    <h4>Note</h4>
+                    <p>The   admission rules, including eligibility criteria, and procedures are   subject to alteration at any time without notice. The decision of the HOD in all   matters relating to admission shall be final . Dispute, if any, will be   subject to jurisdiction of Delhi courts only.</p>
+
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>
+                        Enquiry  <span>Form</span>
+                    </h3> <div class="form">
+                        <div class="form">
+                            <form onsubmit="return lpNewValidateForm22() &amp;&amp; terms()" id="nursing" action="~/Home/contact" method="POST">
+                                <div class="form-row">
+
+                                    <input type="hidden" name="action" value="queryform">
+                                    <input type="hidden" name="source" value="NA">
+                                    <input type="hidden" name="medium" value="NA">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Full Name" id="name" name="name" max="10" class="required form-control">
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Insert your e-mail" max="10" id="email" name="email" class="required contact-form-email form-control">
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="phone" type="text" max="10" placeholder="Mobile" name="phone" class="required form-control">
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="message" type="text" placeholder="enquiry" name="message" class="required form-control">    </textarea>
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="text-center">
+                                    <input value="SUBMIT →" class="book_btn" type="submit">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- #contact -->
+</main>
+

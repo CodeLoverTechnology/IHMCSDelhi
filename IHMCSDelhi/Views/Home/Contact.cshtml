@@ -1,17 +1,124 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="slider">
+    <img src="~/Images/contact.png" class="img-reponsive">
+</div>
+<main id="main">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+    <section id="contact" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="container">
+
+            <div class="section-header">
+                <h3>Contact <span>Us</span></h3>
+
+            </div>
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3>Address</h3>
+                        <address>D-1, 3rd Floor, Bareja Tower, Main Mathura Road, Badarpur, New Delhi- 110044 </address><br>
+                        <br><br>
+
+                        <address>IHMCS, near kargi chauk, haridwar bypass, dehradun, uttarakhand </address>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+8285148778">8285 148 778 </a></p>
+                        <p><a href="tel:+01129892088">011 2989 2088 </a></p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@ihmcsdelhi.org">info@ihmcsdelhi.org</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3> IHMCS information Center </h3>
+
+                        <address>
+                            K-95/1, Main Masoodpur Market, Vasant Kunj, Near Hotel Malik Continental, New Delhi-110070
+                            <address>
+                            </address>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+8285148778"> 987-300-9486   </a></p>
+                        <p><a href="tel:+01129892088"> 8860 520 519  </a></p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@ihmcsdelhi.org">info@ihmcsdelhi.org</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form">
+                <form onsubmit="return lpNewValidateForm23() &amp;&amp; terms()" id="nursing" action="~/Home/contact" method="POST">
+                    <div class="form-row">
+
+                        <input type="hidden" name="action" value="queryform">
+                        <input type="hidden" name="source" value="NA">
+                        <input type="hidden" name="medium" value="NA">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Full Name" id="name" name="name" class="required form-control" required="">
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Insert your e-mail" id="email" name="email" class="required contact-form-email form-control" required="">
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input id="phone" type="text" max="10" placeholder="Mobile"  name="phone" class="required form-control" required="">
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" type="text" placeholder="enquiry message" name="message" class="required form-control">    </textarea>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center">
+                        <input value="SUBMIT →" class="book_btn" type="submit">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section><!-- #contact -->
+
+</main>

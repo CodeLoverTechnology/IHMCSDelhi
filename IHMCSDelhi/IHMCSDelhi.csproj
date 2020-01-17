@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,16 +47,64 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.7\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -72,35 +122,8 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -112,17 +135,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Diagnostics.DiagnosticSource">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
-      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -130,30 +142,391 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\IHMCSDelhiModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IHMCSDelhiModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IHMCSDelhiModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IHMCSDelhiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IHMCSDelhiModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IHMCSDelhiModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_EnquiryMaster.cs">
+      <DependentUpon>IHMCSDelhiModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\animate.min.css" />
+    <Content Include="Content\bootsidemenu.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\default+en.css" />
+    <Content Include="Content\default.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="exam\33500834e44e8f5adf413f65bb6206dbUCOM12_7.jpeg" />
+    <Content Include="exam\59716378106709e9e3f225615d56d28aUCSC16_1.jpeg" />
+    <Content Include="exam\b2f7b859be8daad4ac7672bbf041cfbbUCSC16_2.jpeg" />
+    <Content Include="exam\e274cce07151181169da1e8b527db9e8UCOM12_8.jpeg" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\10.png" />
+    <Content Include="Images\11.png" />
+    <Content Include="Images\12.png" />
+    <Content Include="Images\1520954bd8ab310bf046842587a407691.jpg" />
+    <Content Include="Images\1570656100158048LOGO.jpg" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\6.png" />
+    <Content Include="Images\7.png" />
+    <Content Include="Images\7c96151672cae65a3f756c656b95c51d3.jpg" />
+    <Content Include="Images\8.png" />
+    <Content Include="Images\9.png" />
+    <Content Include="Images\about.png" />
+    <Content Include="Images\apply.jpg" />
+    <Content Include="Images\c5dc8a8ec868c585832adab19f59c3032.jpg" />
+    <Content Include="Images\call-to-action-bg.jpg" />
+    <Content Include="Images\contact.png" />
+    <Content Include="Images\director.jpg" />
+    <Content Include="Images\job-opping.jpg" />
+    <Content Include="Images\job.jpg" />
+    <Content Include="Images\no-image.jpg" />
+    <Content Include="Images\thank-you.png" />
+    <Content Include="Images\ug.JPG" />
+    <Content Include="ionicons\fonts\ionicons.svg" />
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="Content\ionicons.min.css" />
+    <Content Include="Content\lightbox.min.css" />
+    <Content Include="Content\owl.carousel.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="f.txt" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\about-mission.jpg" />
+    <Content Include="Images\about-plan.jpg" />
+    <Content Include="Images\about-vision.jpg" />
+    <Content Include="Images\app1.jpg" />
+    <Content Include="Images\app2.jpg" />
+    <Content Include="Images\card2.jpg" />
+    <Content Include="Images\client-1.png" />
+    <Content Include="Images\client-10.png" />
+    <Content Include="Images\client-11.png" />
+    <Content Include="Images\client-12.png" />
+    <Content Include="Images\client-13.png" />
+    <Content Include="Images\client-14.png" />
+    <Content Include="Images\client-2.png" />
+    <Content Include="Images\client-3.png" />
+    <Content Include="Images\client-4.png" />
+    <Content Include="Images\client-5.png" />
+    <Content Include="Images\client-6.png" />
+    <Content Include="Images\client-7.png" />
+    <Content Include="Images\client-8.png" />
+    <Content Include="Images\client-9.png" />
+    <Content Include="Images\ihmcs-logo.png" />
+    <Content Include="Images\ihmcs.png" />
+    <Content Include="Images\inner-pages.jpg" />
+    <Content Include="Images\quick-enqury.jpg" />
+    <Content Include="Images\sl.png" />
+    <Content Include="Images\ssd.png" />
+    <Content Include="Images\ths.png" />
+    <Content Include="Images\web3.jpg" />
+    <Content Include="ionicons\css\ionicons.min.css" />
+    <Content Include="Models\IHMCSDelhiModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IHMCSDelhiModel.Context.cs</LastGenOutput>
+      <DependentUpon>IHMCSDelhiModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\IHMCSDelhiModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IHMCSDelhiModel.edmx</DependentUpon>
+      <LastGenOutput>IHMCSDelhiModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Promo\1.png" />
+    <Content Include="Promo\10.png" />
+    <Content Include="Promo\11.png" />
+    <Content Include="Promo\12.png" />
+    <Content Include="Promo\13.png" />
+    <Content Include="Promo\14.png" />
+    <Content Include="Promo\15.png" />
+    <Content Include="Promo\16.png" />
+    <Content Include="Promo\17.png" />
+    <Content Include="Promo\1d.png" />
+    <Content Include="Promo\2.png" />
+    <Content Include="Promo\2d.png" />
+    <Content Include="Promo\3d.png" />
+    <Content Include="Promo\4.png" />
+    <Content Include="Promo\4d.png" />
+    <Content Include="Promo\5.png" />
+    <Content Include="Promo\5d.png" />
+    <Content Include="Promo\6.png" />
+    <Content Include="Promo\6d.png" />
+    <Content Include="Promo\7.png" />
+    <Content Include="Promo\8.png" />
+    <Content Include="Promo\9.png" />
+    <Content Include="Promo\abt.jpg" />
+    <Content Include="Promo\analytics.js" />
+    <Content Include="Promo\arrowb1.png" />
+    <Content Include="Promo\arrowb2.png" />
+    <Content Include="Promo\arrowt1.png" />
+    <Content Include="Promo\arrowt2.png" />
+    <Content Include="Promo\arroww1.png" />
+    <Content Include="Promo\arroww2.png" />
+    <Content Include="Promo\atul.jpg" />
+    <Content Include="Promo\b2_1.png" />
+    <Content Include="Promo\b2_2.png" />
+    <Content Include="Promo\b2_3.png" />
+    <Content Include="Promo\Banner_Info.png" />
+    <Content Include="Promo\banner_logo.png" />
+    <Content Include="Promo\bary.jpg" />
+    <Content Include="Promo\bootstrap.min.css" />
+    <Content Include="Promo\bootstrap.min.js" />
+    <Content Include="Promo\britta.jpg" />
+    <Content Include="Promo\call.png" />
+    <Content Include="Promo\chef.png" />
+    <Content Include="Promo\Dayapal.jpg" />
+    <Content Include="Promo\eric.jpg" />
+    <Content Include="Promo\et_logo.png" />
+    <Content Include="Promo\f%281%29.txt" />
+    <Content Include="Promo\f.txt" />
+    <Content Include="Promo\fbevents.js" />
+    <Content Include="Promo\forbes.jpg" />
+    <Content Include="Promo\gtm.js" />
+    <Content Include="Promo\hmc1.jpg" />
+    <Content Include="Promo\hmc2.jpg" />
+    <Content Include="Promo\hmc3.jpg" />
+    <Content Include="Promo\hmc4.jpg" />
+    <Content Include="Promo\Hovaz.jpg" />
+    <Content Include="Promo\icon.png" />
+    <Content Include="Promo\icon1.jpg" />
+    <Content Include="Promo\icon2.jpg" />
+    <Content Include="Promo\icon3.jpg" />
+    <Content Include="Promo\IIHM-Delhi.jpg" />
+    <Content Include="Promo\jquery.min.js" />
+    <Content Include="Promo\l1.png" />
+    <Content Include="Promo\l2.png" />
+    <Content Include="Promo\l3.png" />
+    <Content Include="Promo\PDF.png" />
+    <Content Include="Promo\qevents.js" />
+    <Content Include="Promo\responsive.css" />
+    <Content Include="Promo\sanjeev.jpg" />
+    <Content Include="Promo\sdk.js" />
+    <Content Include="Promo\servicing.png" />
+    <Content Include="Promo\Sevak.jpg" />
+    <Content Include="Promo\Sirawich.jpg" />
+    <Content Include="Promo\slick.js" />
+    <Content Include="Promo\Sohee.jpg" />
+    <Content Include="Promo\style.css" />
+    <Content Include="Promo\track-log.js" />
+    <Content Include="Promo\whatsapp.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Scripts\bootsidemenu.js" />
+    <Content Include="Scripts\contactform.js" />
+    <Content Include="Scripts\counterup.min.js" />
+    <Content Include="Scripts\cse_element__en.js" />
+    <Content Include="Scripts\easing.min.js" />
+    <Content Include="Scripts\hoverIntent.js" />
+    <Content Include="Scripts\isotope.pkgd.min.js" />
+    <Content Include="Content\css" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\ionicons.woff" />
+    <Content Include="ionicons\fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="ionicons\fonts\ionicons.eot" />
+    <Content Include="ionicons\fonts\ionicons.woff" />
+    <Content Include="admission.pdf" />
+    <EntityDeploy Include="Models\IHMCSDelhiModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IHMCSDelhiModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\IHMCSDelhiModel.edmx.diagram">
+      <DependentUpon>IHMCSDelhiModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="exam\0aa022373e5b47d356c9e245605bb7eaPGAT07.pdf" />
+    <Content Include="exam\130c81b9b9c5f544197a1344e718c4a1PMBA12.pdf" />
+    <Content Include="exam\13890a609ca8f04a88de8cd97a5d59e5PWST06.pdf" />
+    <Content Include="exam\13c8a5c893161045bcd258c5d3f15f54PPRN07.pdf" />
+    <Content Include="exam\1888198c2738c7efb376cb3fa9437226PHIN06.pdf" />
+    <Content Include="exam\21628fadf349ea363441dab50b805a4dPCOM06.pdf" />
+    <Content Include="exam\23775ac319c38e4538c053a53b8271e5PCSC08.pdf" />
+    <Content Include="exam\2a5de4e095ebe4a3ab69432964d281d5PBOT06.pdf" />
+    <Content Include="exam\2c543eac030f6bfee0d3955af986b972PTAM08.pdf" />
+    <Content Include="exam\2eaf6b61a438771c770e1fb1d78e47bfPCBK06.pdf" />
+    <Content Include="exam\3e3b6866fe776af894f49b8642cae232PZOO08.pdf" />
+    <Content Include="exam\3eee9643b796560dcb095e1ca62134e6PECO06.pdf" />
+    <Content Include="exam\45566c67cadee014309c6362f9d9befbPPSY06.pdf" />
+    <Content Include="exam\46f5f9c0cc38a6674c601c73a66fc2b1MAML06.pdf" />
+    <Content Include="exam\4a359b3b51b5dead7dce7bdda360d7cbPAPR07.pdf" />
+    <Content Include="exam\4c5fe4a8f608e9c59c45443e685ae22aPSOC06.pdf" />
+    <Content Include="exam\4f27fc7e9b3de31a6cc2dc4a1fd7f720PNFT07.pdf" />
+    <Content Include="exam\50c5e155a9a3109295aaac90353cb5d6PHMC07.pdf" />
+    <Content Include="exam\50ffd0940a10d625570a5e66c31b0f45PTMT06.pdf" />
+    <Content Include="exam\51d5d2d6f3db3d7097c93ad2c91f0956PMTH12.pdf" />
+    <Content Include="exam\535c11b725ff4e6bfab26a71fe1aec95PSWK07.pdf" />
+    <Content Include="exam\585f2df61600dcaa3022208414c3a58dPCOM10.pdf" />
+    <Content Include="exam\5e11a61f44bd831d2571a945949b2739PHIS06.pdf" />
+    <Content Include="exam\5e3a72fe23b00a457c575140237cf719PMCA12.pdf" />
+    <Content Include="exam\621a190c74b6327fbdd5f75ae8018b28PCOP06.pdf" />
+    <Content Include="exam\67dacb356bf8e84254a356ca56e663ecPPAD03.pdf" />
+    <Content Include="exam\6a7b911d12743e59a0cb779c219c7a27PCMK06.pdf" />
+    <Content Include="exam\6e3100b0a9e757fd70f8da571a0979e9DFBS03.pdf" />
+    <Content Include="exam\6ea26af245e0d5620e17f9ccf8ee0027BLIS03.pdf" />
+    <Content Include="exam\71006ad270c4f1b3f5eb03cbf883c76ePELC08.pdf" />
+    <Content Include="exam\71cd56fd183eaf83a7a7f57d1e9ead15DYOG03.pdf" />
+    <Content Include="exam\733fb58fa752b6d40167ef1a153f4ca7KA6.pdf" />
+    <Content Include="exam\7906a25ea59527dc2506068d3927a786DBJ-202.pdf" />
+    <Content Include="exam\79348a2fed79fa49ab3275b4134c3fd9MBA12.pdf" />
+    <Content Include="exam\7b2f1d306412e7230f05f9be00f7cf60PHMR06.pdf" />
+    <Content Include="exam\7bff314d947520990446b0fb4948b5b4PCBK03.pdf" />
+    <Content Include="exam\7d38a83d66ff3645119d44815a13029aPTHM07.pdf" />
+    <Content Include="exam\8409b6ec9a6dcc346aba85a51d52b2d7PCBK03.pdf" />
+    <Content Include="exam\8d95bf17c78cc87d9bde8b6505603397PPHY06.pdf" />
+    <Content Include="exam\8fbe1a39168ceed5e3e50016fe95678fPCPL03_PCPA06.pdf" />
+    <Content Include="exam\bbbbb949abc6d197de47647d8b603fbdPELL06.pdf" />
+    <Content Include="exam\be283dfab9fe880df755edf91f71a37aPCCA06.pdf" />
+    <Content Include="exam\bebb42271a5acb1b62b53e71a1703bf9PCHE06.pdf" />
+    <Content Include="exam\c3202c02947972c0288e700c2376f317PPSC07.pdf" />
+    <Content Include="exam\cd36b11c8821cbe498b784632b0907a0DCOP03.pdf" />
+    <Content Include="exam\ce8cc13d572a30c596f33a3c99dc6406PMAM12.pdf" />
+    <Content Include="exam\d209be89fa7bf2a12731b418e4cffd83PAPR03.pdf" />
+    <Content Include="exam\d6a55deb2a1b90a4f4f22277147aa6b9PJMC06.pdf" />
+    <Content Include="exam\dcfc80948ca066ba3e83d076e680dfaaPMHM12.pdf" />
+    <Content Include="exam\dd17e3997ccbfe5aa26442b36e55239cPPAD06.pdf" />
+    <Content Include="exam\e98b256e96d07f0264a82b9f60a3e12dPYHE06.pdf" />
+    <Content Include="exam\eac3ad292378c53555708ab34e999a05PMAT07.pdf" />
+    <Content Include="exam\eedee7c6fdf1508da13ada40b009ef71PCFI06.pdf" />
+    <Content Include="exam\f0bbde4b4716ce06862fb694cbf8688cPENG06.pdf" />
+    <Content Include="Promo\2242433939388129" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-migrate.min.js" />
+    <Content Include="Scripts\jquery.touchSwipe.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -166,31 +539,70 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\contact.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\js" />
+    <Content Include="Scripts\lightbox.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\superfish.min.js" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <Content Include="Scripts\wow.min.js" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\careerin.cshtml" />
+    <Content Include="Views\Home\director.cshtml" />
+    <Content Include="Views\Home\testimonial.cshtml" />
+    <Content Include="Views\Home\gallery.cshtml" />
+    <Content Include="Views\Home\accreditations.cshtml" />
+    <Content Include="Views\Home\apply.cshtml" />
+    <Content Include="Views\Home\job.cshtml" />
+    <Content Include="Views\Home\vacancy.cshtml" />
+    <Content Include="Views\Home\franchise.cshtml" />
+    <Content Include="Views\Home\admissions.cshtml" />
+    <Content Include="Views\Home\internships.cshtml" />
+    <Content Include="Views\Home\place.cshtml" />
+    <Content Include="Views\Home\tie.cshtml" />
+    <Content Include="Views\Home\placementcell.cshtml" />
+    <Content Include="Views\Home\diploma.cshtml" />
+    <Content Include="Views\Home\pg.cshtml" />
+    <Content Include="Views\Home\ug.cshtml" />
+    <Content Include="Views\Home\form.cshtml" />
+    <Content Include="Views\Home\thankyou.cshtml" />
+    <Content Include="Views\Home\exam.cshtml" />
+    <Content Include="Views\Home\Result.cshtml" />
+    <Content Include="Views\Home\ihmcs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
@@ -218,8 +630,10 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
