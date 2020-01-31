@@ -249,9 +249,7 @@ namespace IHMCSDelhi.Controllers
                 message.To.Add(ObjNew.Emailid);
                 message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
                 message.From = new System.Net.Mail.MailAddress("enquiry@ihmcsdelhi.org", "INSTITUTE OF HOTEL MANAGEMENT & CATERING SCIENCE (IHMCS) Enquiry Details");
-                message.Bcc.Add("info@ihmcsdelhi.org");
                 message.Bcc.Add("ajitmca2015@gmail.com");
-                message.Bcc.Add("codelovertechnology@gmail.com");
                 message.Subject = "INSTITUTE OF HOTEL MANAGEMENT & CATERING SCIENCE (IHMCS) Enquiry Details : " + ObjNew.Name;
                 message.Body = "Hi " + ObjNew.Name + ", " + System.Environment.NewLine + System.Environment.NewLine
                     + "======================================================================================== "
@@ -269,16 +267,11 @@ namespace IHMCSDelhi.Controllers
                     + "Thanks & Regards," + System.Environment.NewLine
                    + "INSTITUTE OF HOTEL MANAGEMENT & CATERING SCIENCE (IHMCS)," + System.Environment.NewLine
                    + "CORPORATE OFFICE :-" + System.Environment.NewLine
-                   + "D-1, 3rd Floor, Bareja Tower," + System.Environment.NewLine
+                   + "D-1, Bareja Tower," + System.Environment.NewLine
                    + "Main Mathura Road, Badarpur, New Delhi- 110044," + System.Environment.NewLine
                    + "Phone :- 011-2989-2088" + System.Environment.NewLine
                    + "Email ID :- enquiry@ihmcsdelhi.org/info@ihmcsdelhi.org" + System.Environment.NewLine
-                   + "Contact No : +91-8285148778" + System.Environment.NewLine
-                + System.Environment.NewLine
-                   + System.Environment.NewLine
-                   + "IHMCS INFORMATION CENTER :-" + System.Environment.NewLine
-                   + "K-95/1, Main Masoodpur Market, Vasant Kunj," + System.Environment.NewLine
-                   + "Near Hotel Malik Continental, New Delhi-110070," + System.Environment.NewLine;
+                   + "Contact No : +91-8285148778" + System.Environment.NewLine;
 
                 //var contentType = new System.Net.Mime.ContentType(System.Net.Mime.MediaTypeNames.Application.Pdf);
                 message.IsBodyHtml = false;
